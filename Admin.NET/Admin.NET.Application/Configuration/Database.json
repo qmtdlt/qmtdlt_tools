@@ -11,7 +11,7 @@
         "DbType": "MySql", // MySql、SqlServer、Sqlite、Oracle、PostgreSQL、Dm、Kdbndp、Oscar、MySqlConnector、Access、OpenGauss、QuestDB、HG、ClickHouse、GBase、Odbc、Custom
         //"ConnectionString": "DataSource=./Admin.NET.db", // Sqlite
         //"ConnectionString": "PORT=5432;DATABASE=xxx;HOST=localhost;PASSWORD=xxx;USER ID=xxx", // PostgreSQL
-        "ConnectionString": "Server=localhost;Database=qmtdlt_tools;Uid=root;Pwd=123456;SslMode=None;AllowLoadLocalInfile=true;AllowUserVariables=true;", // MySql,
+        "ConnectionString": "Server=qmtdlt.top;Database=qmtdlt_tools;Uid=root;Pwd=123456;SslMode=None;AllowLoadLocalInfile=true;AllowUserVariables=true;", // MySql,
         //"ConnectionString": "User Id=xxx; Password=xxx; Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL)))", // Oracle
         //"ConnectionString": "Server=localhost;Database=xxx;User Id=xxx;Password=xxx;Encrypt=True;TrustServerCertificate=True;", // SqlServer
 
