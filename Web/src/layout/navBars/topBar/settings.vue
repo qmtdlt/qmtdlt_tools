@@ -256,7 +256,7 @@
 					<div class="layout-breadcrumb-seting-bar-flex-label">{{ $t('message.layout.fourIsWatermark') }}</div>
 					<div class="layout-breadcrumb-seting-bar-flex-value">
 						<!-- 由参数配置 sys_watermark 控制 -->
-						<el-switch v-model="getThemeConfig.isWatermark" size="small" @change="onWatermarkChange" disabled></el-switch>
+						<el-switch v-model="getThemeConfig.isWatermark" size="small" @change="onWatermarkChange"></el-switch>
 					</div>
 				</div>
 				<div class="layout-breadcrumb-seting-bar-flex mt14">
@@ -599,7 +599,8 @@ const onAddDarkChange = () => {
 };
 // 4、界面显示 --> 开启水印
 const onWatermarkChange = () => {
-	getThemeConfig.value.isWatermark ? Watermark.set(getThemeConfig.value.watermarkText) : Watermark.del();
+	// getThemeConfig.value.isWatermark ? Watermark.set(getThemeConfig.value.watermarkText) : 
+	Watermark.del();
 	setLocalThemeConfig();
 };
 // 4、界面显示 --> 水印文案
@@ -700,7 +701,7 @@ onMounted(() => {
 			// 深色模式
 			if (getThemeConfig.value.isIsDark) onAddDarkChange();
 			// 开启水印
-			onWatermarkChange();
+			// onWatermarkChange();
 			// 设置分栏Logo高度
 			onColumnsLogoHeightChange();
 			// 设置分栏菜单宽度

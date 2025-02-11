@@ -92,7 +92,7 @@ export const useThemeConfig = defineStore('themeConfig', {
 			// 是否开启 TagsView 拖拽
 			isSortableTagsView: true,
 			// 是否开启 TagsView 共用 -- 共用详情界面：tagsView只会出现一个；非共用详情界面：tagsView会出现多个
-			isShareTagsView: true,
+			isShareTagsView: false,
 			// 是否开启 Footer 底部版权信息
 			isFooter: true,
 			// 是否开启灰色模式
@@ -100,9 +100,9 @@ export const useThemeConfig = defineStore('themeConfig', {
 			// 是否开启色弱模式
 			isInvert: false,
 			// 是否开启水印
-			isWatermark: true,
+			isWatermark: false,
 			// 水印文案
-			watermarkText: 'Admin.NET',
+			watermarkText: '',
 
 			/**
 			 * 其它设置

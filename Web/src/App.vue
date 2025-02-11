@@ -129,8 +129,9 @@ const loadSysInfo = () => {
 			themeConfig.value.icp = data.icp;
 			themeConfig.value.icpUrl = data.icpUrl;
 			// 水印
-			themeConfig.value.isWatermark = data.watermark != null;
-			themeConfig.value.watermarkText = data.watermark;
+			debugger
+			themeConfig.value.isWatermark = false;
+			themeConfig.value.watermarkText = "";
 			// 版权说明
 			themeConfig.value.copyright = data.copyright;
 			// 登录验证
